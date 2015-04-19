@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Future Proofs Demo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-nav" >
+          <form class="navbar-form navbar-left">
+            <button class="btn btn-danger" ng-click="plotService.clear();"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> Delete</button>
+            <button title="Zoom In" class="btn btn-primary" ng-click="plotService.zoomIn();"><i class="glyphicon glyphicon-zoom-in" aria-hidden="true"></i></button>
+            <button title="Zoom Out" class="btn btn-primary" ng-click="plotService.zoomOut();"><i class="glyphicon glyphicon-zoom-out" aria-hidden="true"></i></button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <i class="glyphicon glyphicon-tint" aria-hidden="true"></i> Colour <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li ng-repeat="colour in plotService.colours">
+                  <a ng-click="plotService.colour=colour">{{colour}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <i class="glyphicon glyphicon-pencil" aria-hidden="true"></i> Thickness <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li ng-repeat="thickness in plotService.thicknesses">
+                  <a ng-click="plotService.thickness=thickness">{{thickness}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <i class="glyphicon glyphicon-pencil" aria-hidden="true"></i> Mode <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li ng-repeat="mode in plotService.modes">
+                  <a ng-click="plotService.mode=mode">{{mode}}</a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>

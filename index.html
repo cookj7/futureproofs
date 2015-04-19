@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="futureproofs">
+
+  <head>
+    <!-- Latest compiled and minified CSS for Bootstrap -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Additional styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Angular CDN -->
+    <script src="//code.angularjs.org/1.2.13/angular.js"></script>
+
+    <!-- Title -->
+    <title>Future Proofs Demo</title>
+  </head>
+
+  <body ng-controller="ctrl">
+    <div  ng-include="layout.topBar"></div>
+    <div class="container-fluid">
+      <canvas id="canvas" width="480" height="618" drawing></canvas>
+    </div>
+    <div  ng-include="layout.bottomBar"></div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Angular local storage -->
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+
+    <!-- Angular app components -->
+    <script src="js/client/module/app.js"></script>
+    <script src="js/client/controller/ctrl.js"></script>
+    <script src="js/client/directive/drawing.js"></script>
+    <script src="js/client/service/plot.js"></script>
+  </body>
+
+</html>

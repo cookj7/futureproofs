@@ -1,0 +1,21 @@
+{
+  "name": "fproofs",
+  "version": "0.0.0",
+  "authors": [
+    "jonny cook"
+  ],
+  "description": "fproofs demo manifest",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-local-storage": "~0.1.5",
+    "bootstrap": "~3.3.4",
+    "angular-seed": "*"
+  }
+}
