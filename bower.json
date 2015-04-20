@@ -16,6 +16,7 @@
   "dependencies": {
     "angular-local-storage": "~0.1.5",
     "bootstrap": "~3.3.4",
-    "angular-seed": "*"
+    "angular-seed": "*",
+    "angular-route": "~1.3.15"
   }
 }

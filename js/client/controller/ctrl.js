@@ -1,6 +1,6 @@
 'use strict';
 // controller: ctrl
-app.controller('ctrl', ['$scope', '$rootScope', 'plotService', function ($scope, $rootScope, plotService, $routeParams){
+app.controller('ctrl', ['$scope', '$rootScope', 'plotService', function ($scope, $rootScope, plotService){
   $scope.plotService = plotService;
   $scope.layout = {
     topBar: 'js/client/view/partial/topbar.html',
